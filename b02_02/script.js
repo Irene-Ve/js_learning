@@ -48,3 +48,17 @@ const markup = (backpack) => {
 const main = document.createElement("main");
 main.innerHTML = markup(backpack);
 document.body.appendChild(main);
+// the body elemente is never created in the index.html : 
+/* <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module demo</title>
+    <script src="script.js"></script>
+  </head>
+  <body></body> //created AFTER calling the script.js!
+</html>
+*/
+
+

@@ -50,4 +50,12 @@
  
  const main = document.querySelector(".maincontent");
  
- main.innerHTML = content;
+ // b05_09
+const newArticle = document.createElement("article")
+newArticle.classList("backpack")
+newArticle.setAttribute("id", "everyday")
+
+//main.innerHTML = content;
+newArticle.innerHTML = content;
+
+main.append(newArticle);
